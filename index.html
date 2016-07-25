@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="chatApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat with Friends</title>
+    
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="app/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div ng-controller="mainController" class="chatGroup card card-1">
+            <form ng-submit="open()">
+                <input type="text" placeholder="Enter Email" required ng-model="user" class="form-control chatInput" style="float:left"/>
+              <input type="submit" class="btn" value="Click To Chat" style="float:left;margin-left:2%;">
+           </form>
+       </div>
+</div>
+        <script src="app/js/angular.min.js"></script>
+	<script src="app/js/ui-bootstrap-tpls-0.14.3.min.js"></script>
+    <script src="app/js/ngStorage.js"></script>
+	<script src="app/app.js"></script>
+</body>
+</html>
+
